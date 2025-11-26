@@ -9,7 +9,8 @@ export default function ProductForm({ initial, onSubmit }) {
     let errs = {};
 
     if (!form.title.trim()) errs.title = "Title is required";
-    if (!form.price || isNaN(form.price) || form.price<=10 ) errs.price = "Valid price required";
+    if (!form.price || isNaN(form.price)  ) errs.price = "Valid price required";
+     if ( form.price<=10 ) errs.price = "Price should be greater than 10";
     if (!form.description.trim()) errs.description = "Description required";
     if (!form.category.trim()) errs.category = "Category required";
     if (!form.image || !form.image.startsWith("http"))

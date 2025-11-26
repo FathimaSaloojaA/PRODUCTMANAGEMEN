@@ -57,20 +57,52 @@ Lucide Icons
 Hosted on Vercel
 
 📁 Folder Structure
-src/
- ├── components/
- │   ├── Navbar.jsx
- │   ├── Footer.jsx
- │   ├── ProductCard.jsx
- │   ├── WishlistButton.jsx
- │   └── Loader.jsx
- ├── pages/
- │   ├── Home.jsx
- │   ├── ProductDetails.jsx
- │   ├── Wishlist.jsx
- ├── App.jsx
- ├── main.jsx
- └── index.css
+\---src
+    |   App.css
+    |   App.jsx
+    |   index.css
+    |   main.jsx
+    |   
+    +---assets
+    |       react.svg
+    |       
+    +---components
+    |       Breadcrumbs.jsx
+    |       ErrorMessage.jsx
+    |       Filters.jsx
+    |       Footer.jsx
+    |       Loader.jsx
+    |       Modal.jsx
+    |       Navbar.jsx
+    |       Pagination.jsx
+    |       ProductCard.jsx
+    |       ProductForm.jsx
+    |       ProductList.jsx
+    |       SearchBar.jsx
+    |       SortBar.jsx
+    |       WishlistButton.jsx
+    |       
+    +---context
+    |       ProductContext.jsx
+    |       
+    +---hooks
+    |       useLocalStorage.js
+    |       
+    +---pages
+    |       AddProduct.jsx
+    |       EditProduct.jsx
+    |       Home.jsx
+    |       NotFound.jsx
+    |       ProductDetails.jsx
+    |       
+    \---utils
+            classNames.js
+            skeleton.jsx
+            toast.js
+            
+
+
+
 
 ⚙️ Installation & Setup
 

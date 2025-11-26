@@ -4,19 +4,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 🌤 LIGHT MODE — Soft minimal neutral */
+
 .light-theme {
-  background-color: #e9ecf1;  /* clean, subtle, not white */
+  background-color: #e9ecf1;  
   color: #1f2937;
 }
 
-/* 🌙 DARK MODE — Smooth neutral charcoal */
+
 .dark-theme {
-  background-color: #16181d; /* perfect for neon/glass */
+  background-color: #16181d; 
   color: #e5e7eb;
 }
 
-/* Make transitions smooth */
+
 body, .dark-theme, .light-theme {
   transition: background-color 0.4s ease, color 0.4s ease;
 }

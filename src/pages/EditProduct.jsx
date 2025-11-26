@@ -25,7 +25,7 @@ export default function EditProduct() {
       transition={{ duration: 0.4 }}
       className="max-w-3xl mx-auto p-6"
     >
-      {/* Page Title */}
+      
       <h1
         className="
           text-3xl font-extrabold mb-6 
@@ -36,7 +36,7 @@ export default function EditProduct() {
         Edit Product
       </h1>
 
-      {/* Form Card */}
+      
       <div
         className="
           p-6 rounded-2xl

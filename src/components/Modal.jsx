@@ -15,7 +15,7 @@ export default function Modal({ open, onClose, onConfirm }) {
             flex items-center justify-center
           "
         >
-          {/* MODAL CARD */}
+          
           <motion.div
             key="modal"
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
@@ -43,10 +43,10 @@ export default function Modal({ open, onClose, onConfirm }) {
               Are you sure you want to delete this product?
             </p>
 
-            {/* BUTTON ROW */}
+            
             <div className="flex justify-center gap-4">
 
-              {/* DELETE BUTTON */}
+              
               <motion.button
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.92 }}
@@ -62,7 +62,7 @@ export default function Modal({ open, onClose, onConfirm }) {
                 Delete
               </motion.button>
 
-              {/* CANCEL BUTTON */}
+              
               <motion.button
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.92 }}

@@ -23,7 +23,7 @@ export default function Navbar() {
     >
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
 
-        {/* LOGO */}
+        
         <Link
           to="/"
           className="
@@ -33,10 +33,10 @@ export default function Navbar() {
             hover:opacity-80 transition
           "
         >
-          MyStore
+          PickNow
         </Link>
 
-        {/* SEARCH BAR */}
+        
         <div className="w-full md:w-1/2">
           <motion.input
             whileFocus={{ scale: 1.02 }}
@@ -57,10 +57,10 @@ export default function Navbar() {
           />
         </div>
 
-        {/* ACTION BUTTONS */}
+        
         <div className="flex items-center gap-4">
 
-          {/* Add Product Button */}
+          
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link
               to="/add"
@@ -76,7 +76,7 @@ export default function Navbar() {
             </Link>
           </motion.div>
 
-          {/* Dark Mode Toggle */}
+          
           <motion.button
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}

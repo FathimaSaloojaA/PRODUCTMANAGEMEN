@@ -12,7 +12,6 @@ import NotFound from "./pages/NotFound";
 function AppContent() {
   const { darkMode } = useContext(ProductContext);
 
-  // 🔥 Apply theme class to <html> element
   useEffect(() => {
     const html = document.documentElement;
 

@@ -17,7 +17,7 @@ export default function Home() {
       className="space-y-8 mt-6"
     >
 
-      {/* FILTER + SORT BAR */}
+      
       <div
         className="
           flex flex-col sm:flex-row gap-4 items-center justify-between 
@@ -32,10 +32,10 @@ export default function Home() {
         <SortBar />
       </div>
 
-      {/* PRODUCT LIST */}
+     
       <ProductList products={paginatedProducts} />
 
-      {/* PAGINATION */}
+      
       {totalPages > 1 && (
         <div className="pt-4">
           <Pagination />

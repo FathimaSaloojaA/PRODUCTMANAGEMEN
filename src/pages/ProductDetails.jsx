@@ -28,7 +28,7 @@ export default function ProductDetails() {
       transition={{ duration: 0.4 }}
       className="space-y-6"
     >
-      {/* BREADCRUMBS */}
+      
       <Breadcrumbs
         items={[
           { label: "Home", to: "/" },
@@ -37,7 +37,7 @@ export default function ProductDetails() {
         ]}
       />
 
-      {/* PRODUCT CONTAINER */}
+      
       <motion.div
         initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -54,12 +54,12 @@ export default function ProductDetails() {
           transition-all
         "
       >
-        {/* WISHLIST BUTTON */}
+        
         <div className="absolute top-4 right-4">
           <WishlistButton id={product.id} />
         </div>
 
-        {/* PRODUCT IMAGE */}
+        
         <motion.img
           src={product.image}
           alt={product.title}
@@ -67,7 +67,7 @@ export default function ProductDetails() {
           whileHover={{ scale: 1.08 }}
         />
 
-        {/* TITLE */}
+    
         <h1
           className="
             text-3xl font-extrabold 
@@ -78,7 +78,7 @@ export default function ProductDetails() {
           {product.title}
         </h1>
 
-        {/* PRICE */}
+        
         <p
           className="
             text-3xl font-bold mb-4
@@ -89,12 +89,12 @@ export default function ProductDetails() {
           ${product.price}
         </p>
 
-        {/* DESCRIPTION */}
+        
         <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
           {product.description}
         </p>
 
-        {/* ACTION BUTTONS */}
+        
         <div className="flex gap-4">
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link
@@ -125,7 +125,7 @@ export default function ProductDetails() {
           </motion.div>
         </div>
 
-        {/* DELETE CONFIRM MODAL */}
+        
         <Modal
           open={open}
           onClose={() => setOpen(false)}

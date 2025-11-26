@@ -12,7 +12,7 @@ export default function Breadcrumbs({ items }) {
       {items.map((item, idx) => (
         <span key={idx} className="flex items-center gap-1">
 
-          {/* LINK or TEXT */}
+          
           {item.to ? (
             <motion.span whileHover={{ scale: 1.05 }}>
               <Link
@@ -38,7 +38,7 @@ export default function Breadcrumbs({ items }) {
             </span>
           )}
 
-          {/* SEPARATOR */}
+          
           {idx < items.length - 1 && (
             <span
               className="

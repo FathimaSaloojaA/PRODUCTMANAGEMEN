@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
 
       <p className="text-center text-gray-500 text-sm mt-8">
-        © {new Date().getFullYear()} Expensio. All rights reserved.
+        © {new Date().getFullYear()} Pick Now. All rights reserved.
       </p>
 
     </footer>

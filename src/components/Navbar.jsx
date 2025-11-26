@@ -23,7 +23,7 @@ export default function Navbar() {
     >
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
 
-        
+        {/* Logo */}
         <Link
           to="/"
           className="
@@ -36,7 +36,7 @@ export default function Navbar() {
           PickNow
         </Link>
 
-        
+        {/* Search */}
         <div className="w-full md:w-1/2">
           <motion.input
             whileFocus={{ scale: 1.02 }}
@@ -57,10 +57,26 @@ export default function Navbar() {
           />
         </div>
 
-        
+        {/* Buttons */}
         <div className="flex items-center gap-4">
 
-          
+          {/* ⭐ Home Button */}
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link
+              to="/"
+              className="
+                px-4 py-2 rounded-lg font-semibold
+                bg-gradient-to-r from-blue-500 to-purple-500
+                text-white shadow-lg 
+                hover:shadow-[0_0_10px_rgba(59,130,246,0.6)]
+                transition
+              "
+            >
+              Home
+            </Link>
+          </motion.div>
+
+          {/* + Add Button */}
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link
               to="/add"
@@ -76,7 +92,7 @@ export default function Navbar() {
             </Link>
           </motion.div>
 
-          
+          {/* Dark Mode Toggle */}
           <motion.button
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}

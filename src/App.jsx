@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import ProductProvider, { ProductContext } from "./context/ProductContext";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import AddProduct from "./pages/AddProduct";
@@ -35,6 +36,7 @@ function AppContent() {
           <Route path="/edit/:id" element={<EditProduct />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer></Footer>
       </div>
     </BrowserRouter>
   );
